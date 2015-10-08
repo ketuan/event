@@ -35,13 +35,40 @@
 
 <?php if($_menu): ?>
     <nav id="nav">
+ 		<span class="menu-left-bg"></span>
         <ol class="nav-primary">
+        	<li class="home-link level0">
+        		<a href="<?php echo $this->getUrl(''); ?>" title="Home page" class="level0">
+        			<?php echo $this->__('Home'); ?>
+        		</a>
+        	</li>
             <?php echo $_menu ?>
+            <li class="about-link level0">
+        		<a href="<?php echo $this->getUrl(''); ?>about-us" title="About Us" class="level0">
+        			<?php echo $this->__('About Us'); ?>
+        		</a>
+        	</li>
+        	<li class="logo-w level0">
+            	<a href="<?php echo $this->getUrl(''); ?>" title="Home page" class="level0">
+        			<?php echo $this->__('Home'); ?>
+        		</a>
+        	</li>
+        	<li class="sponsors-link level0">
+        		<a href="<?php echo $this->getBaseUrl(); ?>sponsors" title="Sponsors" class="level0">
+        			<?php echo $this->__('Sponsors'); ?>
+        		</a>
+        	</li>
+        	<li class="types-link level0">
+        		<a href="<?php echo $this->getUrl(''); ?>types" title="Types" class="level0">
+        			<?php echo $this->__('Types'); ?>
+        		</a>
+        	</li>
+        	<li class="contact-link level0">
+        		<a href="<?php echo $this->getUrl(''); ?>contacts" title="Contact Us" class="level0">
+        			<?php echo $this->__('Contact Us'); ?>
+        		</a>
+        	</li>
         </ol>
-        <!-- <a class="logo" href="<?php echo $this->getUrl('') ?>">
-            <img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="large" />
-            <img src="<?php echo $this->getLogoSrcSmall() ?>" alt="<?php echo $this->getLogoAlt() ?>" class="small" />
-        </a> -->
-        
+        <span class="menu-right-bg"></span>
     </nav>
 <?php endif ?>
