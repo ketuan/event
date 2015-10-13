@@ -50,6 +50,8 @@
                 <action method="addJs"><script>mage/translate.js</script></action>
                 <action method="addJs"><script>mage/cookies.js</script></action>
 
+                <action method="addJs"><script>azmage/owl.carousel.min.js</script></action>
+
                 <block type="page/js_cookie" name="js_cookies" template="page/js/cookie.phtml"/>
 
                 <!-- Remove items which the RWD package is not dependent upon -->
@@ -64,11 +66,11 @@
                 <action method="addItem"><type>skin_js</type><name>js/app.js</name></action>
                 <action method="addItem"><type>skin_js</type><name>js/lib/jquery.cycle2.min.js</name></action>
                 <action method="addItem"><type>skin_js</type><name>js/lib/jquery.cycle2.swipe.min.js</name></action>
-                <action method="addItem"><type>skin_js</type><name>js/slideshow.js</name></action>
+                <!-- <action method="addItem"><type>skin_js</type><name>js/slideshow.js</name></action> -->
                 <action method="addItem"><type>skin_js</type><name>js/lib/imagesloaded.js</name></action>
                 <action method="addItem"><type>skin_js</type><name>js/minicart.js</name></action>
-
                 <action method="addCss"><stylesheet>css/font-awesome.min.css</stylesheet></action>
+                <action method="addCss"><stylesheet>css/owl.carousel.css</stylesheet></action>
                 
                 <!-- Add stylesheets with no media queries for use in IE 8 and below -->
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie8.css</name><params/><if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if></action>
